@@ -1,6 +1,6 @@
 ## Automate create AWS Lambda Function using Terraform and GitHub Actions  
 
-This is a complete setup to create AWS Lambda Function (Python function) using Terraform and GitHub Actions.
+This is a complete setup to create AWS Lambda Function (a Python function) using Terraform and GitHub Actions.
 
 **Requirements:**  
 Add your AWS credentials to your GitHub repository  
@@ -31,7 +31,7 @@ terraform destroy -auto-approve
 ```
 
 #### <ins>Method 2:</ins> Deploy AWS Lambda Function using GitHub Actions
-- The provided GitHub Action is for deploying the AWS Lambda Function And they are triggered by workflow_dispatch. Change to other trigger if you wish.
+- The provided GitHub Action is for deploying the AWS Lambda Function, and they are triggered by workflow_dispatch. Change to other trigger if you wish.
 - There are two Gihub Actions workflow files (deploy.yml and destroy.yml).
     - deploy.yml: Deploy the AWS Lambda Function.
     - destroy.yml: Destroy AWS Lambda Function.

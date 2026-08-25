@@ -51,7 +51,7 @@ resource "aws_lambda_function" "my_lambda" {
   filename      = data.archive_file.lambda_zip.output_path
   function_name = "my_terraform_lambda_function"
   role          = aws_iam_role.lambda_role.arn
-  handler       = "index.lambda_handler"
+  handler       = "index.handler"
   code_sha256   = data.archive_file.lambda_zip.output_base64sha256
 
   runtime = "python3.12"

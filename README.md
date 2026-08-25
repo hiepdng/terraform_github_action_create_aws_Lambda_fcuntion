@@ -1,1 +1,1 @@
-## Automate create AWS Lambda Fcuntion using Terraform and GitHub Actions
+## Automate create AWS Lambda Function using Terraform and GitHub Actions

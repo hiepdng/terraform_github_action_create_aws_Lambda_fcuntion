@@ -1,8 +1,10 @@
 import json
 
-def lambda_handler(event, context):
-    print("Received event: " + json.dumps(event, indent=2))
+def handler(event, context):
+    name = event.get("name", "World")
+    message = f"Hello, {name} from local AWS Lambda!"
+
     return {
-        'statusCode': 200,
-        'body': json.dumps('Hello from AWS Lambda managed by Terraform!')
+        "statusCode": 200,
+        "body": json.dumps({"message": message})
     }
